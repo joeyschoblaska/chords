@@ -8,8 +8,8 @@ set :use_sudo, false
 
 ssh_options[:forward_agent] = true
 
-role :web, 'deploy@joeyschoblaska.com'
-role :app, 'deploy@joeyschoblaska.com'
+role :web, 'deploy@173.255.223.62'
+role :app, 'deploy@173.255.223.62'
 
 namespace :deploy do
   task :start, :roles => :web do

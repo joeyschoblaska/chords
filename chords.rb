@@ -6,10 +6,10 @@ class Chords < Sinatra::Base
   end
 
   get '/' do
-    notes = %w(Ab A Bb B C C# D Eb E F F# G)
-    voices = %w(maj m sus dim aug 7 maj7 min7 dim7)
-    inversions = [', first inversion', ', second inversion', '']
-    @chord = "#{notes.shuffle.last} #{voices.shuffle.last}#{inversions.shuffle.last}"
+    notes = %w(A&#9837; A B&#9837; B C C&#9839; D E&#9837; E F F&#9839; G)
+    voices = %w(maj min sus dim aug <sup>7</sup> maj<sup>7</sup> min<sup>7</sup> dim<sup>7</sup>)
+    inversions = ['<br>first inversion', '<br>second inversion', '']
+    @chord = "#{notes.shuffle.last}#{voices.shuffle.last}#{inversions.shuffle.last}"
     haml :index
   end
 end

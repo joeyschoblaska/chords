@@ -1,3 +1,8 @@
-%h1{:style => 'text-align: center; padding: 50px'}= @chord
-%h1{:style => 'text-align: center; padding: 50px'}
-  %a{:href => '/'} New Chord
+!!!
+%head
+  %link{:href => 'stylesheets/bootstrap.min.css', :rel => 'stylesheet'}
+
+%body
+  %h1{:style => 'text-align: center; padding: 50px'}= @chord
+  %h1{:style => 'text-align: center; padding: 50px'}
+    %a{:href => '/'} New Chord

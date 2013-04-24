@@ -1,0 +1,1 @@
+I wanted an app to generate random chords and voicings so that I could practice playing them on the piano. This is that thing. If you want to use it, I host it at [http://chords.joeyschoblaska.com](http://chords.joeyschoblaska.com).
